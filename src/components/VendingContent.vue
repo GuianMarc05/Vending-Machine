@@ -60,6 +60,7 @@ function getChange(bill, owed) {
 
 	if ((bill === 0 || bill === '') && (owed === 0 || owed === '')) {
 		showCom.value = false;
+		showCh.value = false;
 		result.value = 'Insert bill/payment and item amount.';
 		return result.value;
 	} else if (bill < owed) {
