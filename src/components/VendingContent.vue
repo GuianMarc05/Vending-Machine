@@ -65,6 +65,7 @@ function getChange(bill, owed) {
 		return result.value;
 	} else if (bill < owed) {
 		showCom.value = false;
+		showCh.value = false;
 		result.value = 'Insufficient amount, please insert more.';
 		return result.value;
 	} else {
